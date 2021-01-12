@@ -1,0 +1,49 @@
+#server:
+#  port: 8090
+
+
+
+jasypt:
+  encryptor:
+    # 盐加密 设置盐
+    password: 123456!@#
+    # 指定加密方式 jasypt 3.0版本以后需要加这2个配置
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+#使用ENC方法解密下面经过加密的username和password
+info:
+  username: ENC(ScaWBTLgV8WEL1lgqILosg==)
+  password: ENC(EFAi+5FOs3BohdruKT6gag==)
+
+food:
+  rice: 拌饭
+  meat: 烤肉${food.rice}${random.int}
+#  数组
+  sauce:
+    - 咖喱
+    - 蜜汁
+    - 原味
+
+
+
+#激活那个文档的配置
+spring:
+  profiles:
+    active: dev  #文档标识
+
+#文档一，开发环境
+---
+spring:
+  profiles: dev  #文档标识
+
+server:
+  port: 8090
+
+
+#文档二，生产环境
+---
+spring:
+  profiles: prd #文档标识
+
+server:
+  port: 8091
