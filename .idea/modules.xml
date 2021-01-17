@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/springboot-demo.iml" filepath="$PROJECT_DIR$/.idea/springboot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-demo01-helloworld/springboot-demo01-helloworld.iml" filepath="$PROJECT_DIR$/springboot-demo01-helloworld/springboot-demo01-helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-demo02-configuration/springboot-demo02-configuration.iml" filepath="$PROJECT_DIR$/springboot-demo02-configuration/springboot-demo02-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo03-template/springboot-demo03-template.iml" filepath="$PROJECT_DIR$/springboot-demo03-template/springboot-demo03-template.iml" />
     </modules>
   </component>
 </project>
