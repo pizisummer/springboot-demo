@@ -57,6 +57,17 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
 
+
+        <!--thymeleaf模板的依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>nz.net.ultraq.thymeleaf</groupId>
+            <artifactId>thymeleaf-layout-dialect</artifactId>
+            <version>2.4.1</version>
+        </dependency>
     </dependencies>
     <!--打包插件  可以打成jar包-->
     <build>

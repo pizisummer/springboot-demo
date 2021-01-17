@@ -5,8 +5,11 @@ spring:
   mvc:
     view:
       #文件位置 不能修改
-      prefix: /templates/
+      prefix: /templates
       #文件后缀
       suffix: .ftl
   freemarker:
     suffix:  .ftl
+  #消息表达式用到的properties文件所在位置
+  messages:
+    basename: message

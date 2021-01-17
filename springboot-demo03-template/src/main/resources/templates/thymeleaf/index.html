@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--text 不会解析标签  传什么就展示什么-->
+    <p th:text="${name}" >name1</p>
+    <!--&lt;!&ndash;utext 会解析标签&ndash;&gt;-->
+    <p th:utext="${name}" >name2</p>
+    <p th:utext="${welcome}" >welcome</p>
+    <!--text 返回对象restaurant 方式一 变量表达式-->
+    <p th:text="${restaurant.boss}">restaurant.boss</p>
+    <p th:text="${restaurant.chef}">restaurant.chef</p>
+
+    <!--text 返回对象restaurant 方式二 选择变量表达式-->
+    <div th:object="${restaurant}">
+        <p>boss: <span th:text="*{boss}">restaurant.boss</span></p>
+        <p>chef: <span th:text="*{chef}">restaurant.chef</span></p>
+    </div>
+
+    <!--连接URL表达式，@{...} 绝对URL，相对URL-->
+    <!--当href 和 th:href 同时出现的时候 th:href的优先级高 此列调用welcomeB方法-->
+    <a href="/welcome" th:href="@{/welcomeB}">welcomeB</a>
+    <br>
+    <!-- th:href单独使用 调用welcome方法-->
+    <a  th:href="@{/welcome}">直接跳转welcome</a>
+    <br>
+    <!-- th:href单独使用 调用pageController方法，跳转welcome页-->
+    <a  th:href="@{thymeleaf/welcome}">通过pageController跳转welcome</a>
+    <br>
+    <!-- th:href单独使用 调用getParam方法，传递参数，跳转welcome页-->
+    <a  th:href="@{/getParam(boss=黄大明,chef=林小厨)}">传递参数跳转welcome</a>
+    <br>
+
+    <!--    消息表达式-->
+    <p th:text="#{something}">message</p>
+
+    <!--    分段表达式-->
+    <div th:insert="footer :: copy"></div>
+    <div th:replace="footer :: copy"></div>
+    <div th:include="footer :: copy"></div>
+
+    <!--<footer th:fragment="copy"> &copy; 2019</footer>-->
+
+    <!--<div><footer> &copy; 2019</footer></div>-->
+    <!--<footer> &copy; 2019</footer>-->
+    <!--<div> &copy; 2019</div>-->
+</body>
+</html>
