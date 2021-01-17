@@ -15,6 +15,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  *  * 告诉主程序入口类  要自动引入配置文件
  *  * 配置文件对应的类作为它的参数
  *  功能和在配置类使用@Configuration 一样
+ * @author pizisummer
  */
 @SpringBootApplication
 @EnableConfigurationProperties({FoodConfig.class})

@@ -35,32 +35,32 @@ public class JsonController {
 
 
 
-//    @Autowired
-//    private VegetablesConfig vegetablesConfig;
-//    @RequestMapping("/vegetables")
-//    private Vegetables jsonVegetables(){
-//        Vegetables vegetables = new Vegetables();
-//        vegetables.setEggplant(vegetablesConfig.getEggplant());
-//        vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
-//        vegetables.setPotato(vegetablesConfig.getPotato());
-//        return vegetables;
-//    }
+    @Autowired
+    private VegetablesConfig vegetablesConfig;
+    @RequestMapping("/vegetables")
+    private Vegetables jsonVegetables(){
+        Vegetables vegetables = new Vegetables();
+        vegetables.setEggplant(vegetablesConfig.getEggplant());
+        vegetables.setGreenpeper(vegetablesConfig.getGreenpeper());
+        vegetables.setPotato(vegetablesConfig.getPotato());
+        return vegetables;
+    }
     /**
      * 方法三
      *  = @Autowired 声明此属性为配置文件类FoodConfig对象，直接向springboot要，在项目启动的时候已经创建该对象
      * FoodConfig对象已经从配置文件获取相应属性的值
      * 在方法中直接使用对象的属性值
      */
-//    @Autowired
-//    private FoodConfig foodConfig;
-//    @RequestMapping("/jsonfood")
-//    public Food jsonFood(){
-//        Food food = new Food();
-//        food.setRice(foodConfig.getRice());
-//        food.setMeat(foodConfig.getMeat());
-//        food.setSauce(foodConfig.getSauce());
-//        return food;
-//    }
+    @Autowired
+    private FoodConfig foodConfig;
+    @RequestMapping("/jsonfood")
+    public Food jsonFood(){
+        Food food = new Food();
+        food.setRice(foodConfig.getRice());
+        food.setMeat(foodConfig.getMeat());
+        food.setSauce(foodConfig.getSauce());
+        return food;
+    }
 
 
 
