@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$/springboot-demo01-helloworld/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-demo02-configuration/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-demo03-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-demo03-thymeleaf-crud/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-demo03-web-restful/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-demo04-orm-jpa/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

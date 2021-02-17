@@ -10,21 +10,32 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.feiw</groupId>
-    <artifactId>springboot-demo03-template</artifactId>
+    <artifactId>springboot-demo03-web-restful</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-demo03-template</name>
-    <description>Demo project for Spring Boot</description>
-
+    <name>springboot-demo03-web-restful</name>
+    <description>springboot-demo03-web-restful</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
+        <!--thymeleaf模板的依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <!--        web项目需要使用-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--   webjars-->
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>jquery</artifactId>
+            <version>3.5.1</version>
+        </dependency>
+
         <!--开发工具 达到热部署的效果-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -32,7 +43,7 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
-        <!--配置文件处理器-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -50,26 +61,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--freemarker模板的依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
-
-
-        <!--thymeleaf模板的依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>nz.net.ultraq.thymeleaf</groupId>
-            <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>2.4.1</version>
-        </dependency>
     </dependencies>
-    <!--打包插件  可以打成jar包-->
+
     <build>
         <plugins>
             <plugin>

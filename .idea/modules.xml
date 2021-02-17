@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-demo01-helloworld/springboot-demo01-helloworld.iml" filepath="$PROJECT_DIR$/springboot-demo01-helloworld/springboot-demo01-helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-demo02-configuration/springboot-demo02-configuration.iml" filepath="$PROJECT_DIR$/springboot-demo02-configuration/springboot-demo02-configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-demo03-template/springboot-demo03-template.iml" filepath="$PROJECT_DIR$/springboot-demo03-template/springboot-demo03-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo03-thymeleaf-crud/springboot-demo03-thymeleaf-crud.iml" filepath="$PROJECT_DIR$/springboot-demo03-thymeleaf-crud/springboot-demo03-thymeleaf-crud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo03-web-restful/springboot-demo03-web-restful.iml" filepath="$PROJECT_DIR$/springboot-demo03-web-restful/springboot-demo03-web-restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo04-orm-jpa/springboot-demo04-orm-jpa.iml" filepath="$PROJECT_DIR$/springboot-demo04-orm-jpa/springboot-demo04-orm-jpa.iml" />
     </modules>
   </component>
 </project>

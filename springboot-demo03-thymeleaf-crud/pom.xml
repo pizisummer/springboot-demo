@@ -10,9 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.feiw</groupId>
-    <artifactId>springboot-demo03-template</artifactId>
+    <artifactId>springboot-demo03-thymeleaf-crud</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springboot-demo03-template</name>
+    <name>springboot-demo03-thymeleaf-crud</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,6 +20,11 @@
     </properties>
 
     <dependencies>
+        <!--thymeleaf模板的依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
         <!--        web项目需要使用-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -30,12 +35,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <!--配置文件处理器-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
         <!--        lombok maven-->
@@ -50,26 +49,8 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <!--freemarker模板的依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-freemarker</artifactId>
-        </dependency>
-
-
-        <!--thymeleaf模板的依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>nz.net.ultraq.thymeleaf</groupId>
-            <artifactId>thymeleaf-layout-dialect</artifactId>
-            <version>2.4.1</version>
-        </dependency>
     </dependencies>
-    <!--打包插件  可以打成jar包-->
+
     <build>
         <plugins>
             <plugin>

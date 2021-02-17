@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/springboot-demo01-helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-demo02-configuration/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-demo03-template/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-demo03-thymeleaf-crud/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-demo03-web-restful/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-demo04-orm-jpa/pom.xml" />
       </list>
     </option>
   </component>
