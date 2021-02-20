@@ -1,0 +1,13 @@
+server:
+  port: 8090
+#orm使用put方法,使 input框隐藏域指定_method = put 的方式有效
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://10.31.78.112:3306/test?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: FEiw_3309
+
