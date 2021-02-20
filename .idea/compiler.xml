@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-demo03-web-restful" />
+        <module name="springboot-demo04-orm-mybatis-plus" />
         <module name="springboot-demo02-configuration" />
         <module name="springboot-demo03-template" />
         <module name="springboot-demo03-thymeleaf-crud" />
@@ -24,6 +25,8 @@
       <module name="springboot-demo03-web-restful" target="1.8" />
       <module name="springboot-demo04-orm-jpa" target="1.8" />
       <module name="springboot-demo04-orm-mybatis" target="1.8" />
+      <module name="springboot-demo04-orm-mybatis-plus" target="1.8" />
+      <module name="springboot-demo04-orm-mybatis-plus (1)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -35,6 +38,8 @@
       <module name="springboot-demo03-web-restful" options="-parameters" />
       <module name="springboot-demo04-orm-jpa" options="-parameters" />
       <module name="springboot-demo04-orm-mybatis" options="-parameters" />
+      <module name="springboot-demo04-orm-mybatis-plus" options="-parameters" />
+      <module name="springboot-demo04-orm-mybatis-plus (1)" options="-parameters" />
     </option>
   </component>
 </project>
