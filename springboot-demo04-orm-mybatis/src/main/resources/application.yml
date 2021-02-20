@@ -1,0 +1,29 @@
+server:
+  port: 8090
+#orm使用put方法,使 input框隐藏域指定_method = put 的方式有效
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://10.31.78.112:3306/test?characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: FEiw_3309
+
+##方法一，使用mybatis-config.xml文件
+#mybatis:
+#  config-location: classpath:mybatis-config.xml
+
+
+##方法二，不使用mybatis-config.xml文件，
+##把mybatis-config.xml文件声明的参数直接在yml文件中声明
+#mybatis:
+##  声明mapper的xml文件所在目录地址
+#  mapper-locations: classpath*:/mybatis/mapper/*.xml
+##  声明实体类的所在目录地址
+#  type-aliases-package: com.feiw.model
+
+#方法三，不使用mybatis-config.xml文件，
+#  不使用mapper的xml文件，在mapper类的方法上试用注解（@select,@update，@insert）
+#  本列在GuestMapper类的方法上使用注解

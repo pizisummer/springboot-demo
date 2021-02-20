@@ -11,6 +11,7 @@
         <module name="springboot-demo02-configuration" />
         <module name="springboot-demo03-template" />
         <module name="springboot-demo03-thymeleaf-crud" />
+        <module name="springboot-demo04-orm-mybatis" />
         <module name="springboot-demo01-helloworld" />
         <module name="springboot-demo04-orm-jpa" />
       </profile>
@@ -22,6 +23,7 @@
       <module name="springboot-demo03-thymeleaf-crud" target="1.8" />
       <module name="springboot-demo03-web-restful" target="1.8" />
       <module name="springboot-demo04-orm-jpa" target="1.8" />
+      <module name="springboot-demo04-orm-mybatis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -32,6 +34,7 @@
       <module name="springboot-demo03-thymeleaf-crud" options="-parameters" />
       <module name="springboot-demo03-web-restful" options="-parameters" />
       <module name="springboot-demo04-orm-jpa" options="-parameters" />
+      <module name="springboot-demo04-orm-mybatis" options="-parameters" />
     </option>
   </component>
 </project>
